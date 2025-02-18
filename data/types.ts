@@ -1,0 +1,14 @@
+export interface Project {
+  title: string;
+  description: string;
+  imageUrl: string;
+  url: string;
+}
+
+export interface Experience {
+  role: string;
+  company: string;
+  date: string;
+  logo: string;
+  url: string;
+}

@@ -1,21 +1,13 @@
 import * as React from "react";
 import Image from "next/image";
-
+import { Project } from "@/data/types";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-interface Project {
-  title: string;
-  description: string;
-  imageUrl: string;
-  url: string;
-}
 
 interface ProjectCardProps {
   project: Project;
@@ -23,26 +15,24 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card>
+    <Card className="relative overflow-hidden group cursor-pointer hover:brightness-90">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="relative w-full h-96">
+        <div className="relative w-full h-64">
           <Image
             src={project.imageUrl}
             alt={project.title}
-            layout="fill"
-            objectFit="cover"
-            className="rounded"
+            fill
+            sizes="100%"
+            priority
+            style={{ objectFit: "cover" }}
+            className="rounded transition-transform duration-300 ease-in-out group-hover:scale-105"
           />
         </div>
       </CardContent>
-      {/* <CardFooter className="flex justify-between">
-        <div>Github</div>
-        <div>Source</div>
-      </CardFooter> */}
     </Card>
   );
 }
