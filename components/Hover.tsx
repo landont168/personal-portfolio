@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 
-interface IconButtonProps {
-  link: string;
+interface HoverProps {
+  url: string;
   children: ReactNode;
 }
 
-export default function IconButton({ link, children }: IconButtonProps) {
+export default function Hover({ url, children }: HoverProps) {
   return (
     <a
-      href={link}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
       className="p-2 rounded-md hover:bg-accent"

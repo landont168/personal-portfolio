@@ -6,10 +6,8 @@ import Projects from "@/components/sections/Projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-10">
-      <Section title="Landon Trinh">
-        <About />
-      </Section>
+    <>
+      <About />
 
       <Section title="Projects">
         <Projects />
@@ -22,6 +20,6 @@ export default function Home() {
       <Section title="Education">
         <Education />
       </Section>
-    </main>
+    </>
   );
 }

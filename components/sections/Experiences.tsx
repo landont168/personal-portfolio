@@ -4,10 +4,10 @@ import { experiences } from "../../data/content";
 
 export default function Experiences() {
   return (
-    <ul className="space-y-6">
+    <div className="flex flex-col gap-y-4">
       {experiences.map((experience: Experience, index: number) => (
         <ExperienceCard key={index} experience={experience} />
       ))}
-    </ul>
+    </div>
   );
 }

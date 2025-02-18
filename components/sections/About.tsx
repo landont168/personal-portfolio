@@ -1,51 +1,39 @@
+import Underline from "../Underline";
+
 export default function About() {
   return (
-    <div className="flex flex-col gap-y-4">
-      <p>
-        I&rsquo;m a Computer Science and Finance student at the{" "}
-        <a
-          href="https://uwaterloo.ca/computing-financial-management/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:decoration-slate-500"
-        >
-          University of Waterloo
-        </a>
-        .
-      </p>
+    <section>
+      <h1 className="text-3xl font-bold mb-3">Landon Trinh</h1>
+      <div className="flex flex-col gap-y-4">
+        <p>
+          I&rsquo;m a Computer Science and Finance student at the{" "}
+          <Underline
+            url="https://uwaterloo.ca/"
+            text="University of Waterloo"
+          />
+          .
+        </p>
 
-      <p>
-        Currently, I&rsquo;m helping build an accommodations engine for injured
-        workers at{" "}
-        <a
-          href="https://www.wsib.ca/en"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:decoration-slate-500"
-        >
-          WSIB Ontario
-        </a>
-        .
-      </p>
+        <p>
+          Currently, I&rsquo;m helping build an accommodations engine for
+          injured workers at{" "}
+          <Underline url="https://www.wsib.ca/en" text="WSIB Ontario" />.
+        </p>
 
-      <p>
-        Feel free to reach out to me on{" "}
-        <a
-          href="https://www.linkedin.com/in/landontrinh"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:decoration-slate-600"
-        >
-          LinkedIn
-        </a>{" "}
-        or at{" "}
-        <a
-          href="mailto:landon.trinh@uwaterloo.ca"
-          className="underline hover:decoration-slate-600"
-        >
-          landon.trinh@uwaterloo.ca
-        </a>
-      </p>
-    </div>
+        <p>
+          Feel free to reach out to me on{" "}
+          <Underline
+            url="https://www.linkedin.com/in/landontrinh"
+            text="LinkedIn"
+          />{" "}
+          or at{" "}
+          <Underline
+            url="mailto:landon.trinh@uwaterloo.ca"
+            text="landon.trinh@uwaterloo.ca"
+          />
+          .
+        </p>
+      </div>
+    </section>
   );
 }

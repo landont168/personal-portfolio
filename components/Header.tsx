@@ -6,7 +6,7 @@ export default function Header() {
     <nav className="flex items-center justify-center gap-x-4 my-16">
       <ul className="flex gap-x-4">
         <li>
-          <Button variant="ghost" asChild>
+          <Button asChild variant="ghost">
             <Link href="/">About</Link>
           </Button>
         </li>

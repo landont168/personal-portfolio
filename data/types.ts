@@ -8,7 +8,6 @@ export interface Project {
 export interface Experience {
   role: string;
   company: string;
-  date: string;
   logo: string;
   url: string;
 }
