@@ -2,12 +2,14 @@ import { Project, Experience } from "./types";
 
 export const projects: Project[] = [
   {
+    name: "stockle",
     title: "Stockle",
     description: "Full-stack stock-themed spinoff of the classic Wordle game.",
     imageUrl: "/projects/stockle-demo.png",
     url: "https://www.google.com",
   },
   {
+    name: "portfolio-roboadvisor",
     title: "Portfolio Roboadvisor",
     description:
       "Python script that generates a portfolio with optimal risk and return.",
