@@ -1,20 +1,18 @@
-import { Project, Experience } from "./types";
+import { Project, Experience, Journal } from "./types";
 
 export const projects: Project[] = [
   {
-    name: "stockle",
     title: "Stockle",
     description: "Full-stack stock-themed spinoff of the classic Wordle game.",
     imageUrl: "/projects/stockle-demo.png",
-    url: "https://www.google.com",
+    url: "https://github.com/landont168/stockle",
   },
   {
-    name: "portfolio-roboadvisor",
     title: "Portfolio Roboadvisor",
     description:
       "Python script that generates a portfolio with optimal risk and return.",
     imageUrl: "/projects/portfolio-roboadvisor-demo.png",
-    url: "https://www.google.com",
+    url: "https://github.com/landont168/portfolio-roboadvisor",
   },
 ];
 
@@ -26,7 +24,7 @@ export const experiences: Experience[] = [
     url: "https://www.wsib.ca/en",
   },
   {
-    role: "Backend Developer Intern",
+    role: "Data Annotator Intern",
     company: "Arteria AI",
     logo: "/logos/arteria-ai-logo.png",
     url: "https://arteria.ai/",
@@ -40,4 +38,28 @@ export const educations = [
     logo: "/logos/uw-logo.png",
     url: "https://uwaterloo.ca/computing-financial-management/",
   },
+];
+
+
+export const journals: Journal[] = [
+  {
+    title: "First Journal",
+    date: "2021-01-01",
+    content: "This is the first journal entry.",
+  },
+  {
+    title: "Second Journal",
+    date: "2021-01-02",
+    content: "This is the second journal entry.",
+  },
+  {
+    title: "Third Journal",
+    date: "2021-01-03",
+    content: "This is the third journal entry."
+  },
+  {
+    title: "Fourth Journal",
+    date: "2021-01-04",
+    content: "This is the fourth journal entry."
+  }
 ];

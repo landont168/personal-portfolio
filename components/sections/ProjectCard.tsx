@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Project } from "@/data/types";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -16,7 +15,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${project.name}`}>
+    <a href={project.url} target="_blank" rel="noopener noreferrer">
       <Card className="relative overflow-hidden group hover:brightness-90">
         <CardHeader>
           <CardTitle>{project.title}</CardTitle>
@@ -36,6 +35,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </CardContent>
       </Card>
-    </Link>
+    </a>
   );
 }

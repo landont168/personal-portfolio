@@ -12,3 +12,9 @@ export interface Experience {
   logo: string;
   url: string;
 }
+
+export interface Journal {
+  title: string;
+  date: string;
+  content: string;
+}

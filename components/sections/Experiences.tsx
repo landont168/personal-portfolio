@@ -5,7 +5,7 @@ import { experiences } from "../../data/content";
 
 export default function Experiences() {
   return (
-    <Section title="Experiences">
+    <Section title="Experience">
       <div className="flex flex-col gap-y-4">
         {experiences.map((experience: Experience, index: number) => (
           <ExperienceCard key={index} experience={experience} />
