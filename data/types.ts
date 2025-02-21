@@ -1,5 +1,4 @@
 export interface Project {
-  name: string;
   title: string;
   description: string;
   imageUrl: string;
@@ -11,6 +10,7 @@ export interface Experience {
   company: string;
   logo: string;
   url: string;
+  current?: boolean;
 }
 
 export interface Journal {

@@ -22,6 +22,7 @@ export const experiences: Experience[] = [
     company: "WSIB Ontario",
     logo: "/logos/wsib-ontario-logo.jpeg",
     url: "https://www.wsib.ca/en",
+    current: true,
   },
   {
     role: "Data Annotator Intern",

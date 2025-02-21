@@ -1,38 +1,33 @@
-import Underline from "../Underline";
+import Link from "@/components/Link";
 
 export default function About() {
   return (
     <section>
       <h1 className="text-3xl font-bold my-4">Landon Trinh</h1>
       <div className="flex flex-col gap-y-4">
-        <p>
+        <div>
           I&rsquo;m a Computer Science and Finance student at the{" "}
-          <Underline
-            url="https://uwaterloo.ca/computing-financial-management/"
-            text="University of Waterloo"
-          />
+          <Link url="https://uwaterloo.ca/computing-financial-management/">
+            University of Waterloo
+          </Link>
           .
-        </p>
+        </div>
 
-        <p>
+        <div>
           Currently, I&rsquo;m helping build an accommodations engine for
           injured workers at{" "}
-          <Underline url="https://www.wsib.ca/en" text="WSIB Ontario" />.
-        </p>
+          <Link url="https://www.wsib.ca/en">WSIB Ontario</Link>.
+        </div>
 
-        <p>
+        <div>
           Feel free to reach out to me on{" "}
-          <Underline
-            url="https://www.linkedin.com/in/landontrinh"
-            text="LinkedIn"
-          />{" "}
-          or at{" "}
-          <Underline
-            url="mailto:landon.trinh@uwaterloo.ca"
-            text="landon.trinh@uwaterloo.ca"
-          />
+          <Link url="https://www.linkedin.com/in/landontrinh">LinkedIn</Link> or
+          at{" "}
+          <Link url="mailto:landon.trinh@uwaterloo.ca">
+            landon.trinh@uwaterloo.ca
+          </Link>
           .
-        </p>
+        </div>
       </div>
     </section>
   );

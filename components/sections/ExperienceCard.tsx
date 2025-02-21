@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Experience } from "@/data/types";
+import { Badge } from "@/components/ui/badge";
 
 interface ExperienceCardProps {
   experience: Experience;
@@ -22,7 +23,10 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           height={46}
         />
         <div className="flex flex-col">
-          <p className="text-md font-bold">{experience.company}</p>
+          <div className="flex items-center gap-x-1">
+            <p className="text-md font-bold">{experience.company}</p>
+            {experience.current && <Badge variant="secondary">Current</Badge>}
+          </div>
           <p className="text-md">{experience.role}</p>
         </div>
       </div>
