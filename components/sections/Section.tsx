@@ -8,7 +8,7 @@ interface SectionProps {
 export default function Section({ title, children }: SectionProps) {
   return (
     <section>
-      <h1 className="text-2xl font-bold mb-3">{title}</h1>
+      <h1 className="text-2xl font-bold my-3">{title}</h1>
       {children}
     </section>
   );

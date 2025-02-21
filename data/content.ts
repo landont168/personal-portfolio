@@ -43,21 +43,25 @@ export const educations = [
 
 export const journals: Journal[] = [
   {
+    slug: "first-journal",
     title: "First Journal",
     date: "2021-01-01",
     content: "This is the first journal entry.",
   },
   {
+    slug: "second-journal",
     title: "Second Journal",
     date: "2021-01-02",
     content: "This is the second journal entry.",
   },
   {
+    slug: "third-journal",
     title: "Third Journal",
     date: "2021-01-03",
     content: "This is the third journal entry."
   },
   {
+    slug: "fourth-journal",
     title: "Fourth Journal",
     date: "2021-01-04",
     content: "This is the fourth journal entry."

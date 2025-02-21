@@ -14,6 +14,7 @@ export interface Experience {
 }
 
 export interface Journal {
+  slug: string
   title: string;
   date: string;
   content: string;

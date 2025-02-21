@@ -3,12 +3,12 @@ import Underline from "../Underline";
 export default function About() {
   return (
     <section>
-      <h1 className="text-3xl font-bold mb-3">Landon Trinh</h1>
+      <h1 className="text-3xl font-bold my-4">Landon Trinh</h1>
       <div className="flex flex-col gap-y-4">
         <p>
           I&rsquo;m a Computer Science and Finance student at the{" "}
           <Underline
-            url="https://uwaterloo.ca/"
+            url="https://uwaterloo.ca/computing-financial-management/"
             text="University of Waterloo"
           />
           .

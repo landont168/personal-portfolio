@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen max-w-xl mx-auto">
           <Header />
-          <main className="flex flex-col flex-1 container gap-y-14">
+          <main className="flex flex-col flex-1 container gap-y-10">
             {children}
           </main>
           <Separator className="mt-10" />

@@ -6,7 +6,7 @@ import { Project } from "@/data/types";
 export default function Projects() {
   return (
     <Section title="Projects">
-      <div className="grid grid-cols-1 gap-y-4">
+      <div className="grid grid-cols-1 gap-y-6">
         {projects.map((project: Project, index: number) => (
           <ProjectCard key={index} project={project} />
         ))}

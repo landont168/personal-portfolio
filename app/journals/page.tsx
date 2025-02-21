@@ -6,8 +6,8 @@ import { Separator } from "@/components/ui/separator";
 
 export default function JournalsPage() {
   return (
-    <Section title="Journal" id="journals">
-      <Separator className="mt-7" />
+    <Section title="Journal">
+      <Separator />
       <div className="flex flex-col">
         {journals.map((journal: Journal, index: number) => (
           <JournalCard key={index} journal={journal} />
