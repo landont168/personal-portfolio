@@ -13,9 +13,8 @@ export interface Experience {
   current?: boolean;
 }
 
-export interface Journal {
-  slug: string
+export interface Blog {
   title: string;
   date: string;
-  content: string;
+  slug: string;
 }
