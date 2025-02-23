@@ -12,7 +12,7 @@ export default function Header() {
         </li>
         <li>
           <Button asChild variant="ghost">
-            <Link href="/blogs">Blogs</Link>
+            <Link href="/blogs">Journal</Link>
           </Button>
         </li>
       </ul>

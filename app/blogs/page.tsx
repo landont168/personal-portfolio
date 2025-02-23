@@ -7,10 +7,9 @@ import getPostMetadata from "@/lib/getBlogMetadata";
 
 export default function BlogsPage() {
   const blogs = getPostMetadata("blogs");
-  console.log(blogs);
 
   return (
-    <Section title="Blog">
+    <Section title="Journal">
       <Separator />
       <div className="flex flex-col">
         {blogs.map((blog: Blog, index: number) => (

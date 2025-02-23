@@ -27,8 +27,8 @@ export default function BlogPage({ params }: BlogPageProps) {
   const post = getPostContent(slug);
 
   return (
-    <main className="p-6">
-      <article className="prose bg-gray-100">
+    <main>
+      <article className="text-inherit prose prose-headings:text-inherit prose-img:rounded-lg prose-img:mt-2 prose-video:rounded-lg prose-video:mt-2 prose-p:my-4 prose-li:p-0">
         <Markdown>{post.content}</Markdown>
       </article>
     </main>
