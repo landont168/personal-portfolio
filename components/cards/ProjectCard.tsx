@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Project } from "@/data/types";
 import Image from "next/image";
 import {

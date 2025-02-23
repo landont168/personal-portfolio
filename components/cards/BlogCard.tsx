@@ -2,18 +2,10 @@ import { Separator } from "@/components/ui/separator";
 import { Blog } from "@/data/types";
 import Link from "next/link";
 
+import { formatDate } from "@/lib/utils";
 interface BlogCardProps {
   blog: Blog;
 }
-
-const formatDate = (date: string) => {
-  const options: Intl.DateTimeFormatOptions = {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  };
-  return new Date(date).toLocaleDateString("en-US", options);
-};
 
 export default function BlogCard({ blog }: BlogCardProps) {
   return (
