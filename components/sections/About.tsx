@@ -1,4 +1,4 @@
-import Link from "@/components/Link";
+import ExternalLink from "../ExternalLink";
 
 export default function About() {
   return (
@@ -7,25 +7,30 @@ export default function About() {
       <div className="flex flex-col gap-y-4">
         <div>
           I&rsquo;m a Computer Science and Finance student at the{" "}
-          <Link url="https://uwaterloo.ca/computing-financial-management/">
-            University of Waterloo
-          </Link>
+          <ExternalLink
+            url="https://uwaterloo.ca/computing-financial-management/"
+            title="University of Waterloo"
+          />
           .
         </div>
 
         <div>
           Currently, I&rsquo;m helping build an accommodations engine for
           injured workers at{" "}
-          <Link url="https://www.wsib.ca/en">WSIB Ontario</Link>.
+          <ExternalLink url="https://www.wsib.ca/en" title="WSIB Ontario" />.
         </div>
 
         <div>
           Feel free to reach out to me on{" "}
-          <Link url="https://www.linkedin.com/in/landontrinh">LinkedIn</Link> or
-          at{" "}
-          <Link url="mailto:landon.trinh@uwaterloo.ca">
-            landon.trinh@uwaterloo.ca
-          </Link>
+          <ExternalLink
+            url="https://www.linkedin.com/in/landontrinh"
+            title="LinkedIn"
+          />{" "}
+          or at{" "}
+          <ExternalLink
+            url="mailto:landon.trinh@uwaterloo.ca"
+            title="landon.trinh@uwaterloo.ca"
+          />
           .
         </div>
       </div>

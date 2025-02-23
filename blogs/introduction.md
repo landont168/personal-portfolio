@@ -1,19 +1,19 @@
 ---
 title: "Introduction"
-date: "Feb 21, 2025"
+date: "2025-02-20"
 ---
 
 ## Introduction
 
 Hey there, I'm Landon 👋 
 
-Let me introduce myself! I'm currently a student at the University of Waterloo, pursuing a double major in Computer Science and Finance. For my current winter term, I'm interning at WSIB Ontario as a full-stack developer, honing my frontend skills by building an accommodations dashboard for injured workers.
+I'm a student at the University of Waterloo, pursuing a double major in Computer Science and Finance. For my current winter term, I'm interning at WSIB Ontario as a full-stack developer, honing my frontend skills by building an accommodations dashboard for injured workers.
 
 In my free time, I enjoy hanging out with friends, playing video games, and following the latest F1 drama (Lewis Hamilton is my GOAT).
 
 I'm a firm believer in the idea that a person's music taste reveals a lot about them, so judge me as you will, as my most listened-to artists in 2024 were Don Toliver, Travis Scott, and Metro Boomin.
 
-![toronto](/toronto-pic.jpg)
+![toronto](/introduction/toronto-pic.jpg)
 
 ---
  
@@ -27,20 +27,19 @@ At the very least, I plan to write monthly newsletters summarizing key takeaways
 
 ### 2024 Recap 📸
 
-Since it's better late than never, here's a few of my personal highlights from 2024!
+Since it's better late than never, here's a few of my personal highlights from 2024:
 
-- Worked as a summer intern at Arteria AI to help the data science team build and test NLP models:
-![arteria ai team](/arteria-team.png)
+- Interned at Arteria AI during the summer to help the data science team build and test NLP models:
+![arteria ai team](/introduction/arteria-team.png)
 
-- Developed and deployed my first personal side project (Stockle) using the MERN stack and AWS services:
-![stockle](/stockle-project.png)
+- Developed and deployed my first personal side project (Stockle) using the MERN stack and AWS:
+![stockle](/introduction/stockle-project.png)
 
 - Got invited to the SAF Alumni Excellence Gala as a scholarship recipient to network with alumni and faculty members:
-![saf gala](/saf-gala.avif)
+![saf gala](/introduction/saf-gala.avif)
 
 
-- Built the F1 Mercedes W14 LEGO set to tribute Lewis Hamilton leaving Mercedes to join Ferrari:
+- Built the F1 Mercedes W14 LEGO car to tribute Lewis Hamilton leaving Mercedes to join Ferrari:
 <video controls width="100%">
-  <source src="/lego-f1-build.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  <source src="/introduction/lego-f1-build.mp4" type="video/mp4">
 </video>

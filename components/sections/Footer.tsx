@@ -2,8 +2,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import Hover from "./Hover";
-import { ModeToggle } from "./ModeToggle";
+import Hover from "../Hover";
+import { ModeToggle } from "../theme/ModeToggle";
 
 export default function Footer() {
   return (

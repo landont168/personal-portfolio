@@ -1,5 +1,5 @@
 import Section from "@/components/sections/Section";
-import BlogCard from "@/components/BlogCard";
+import BlogCard from "@/components/cards/BlogCard";
 import { Separator } from "@/components/ui/separator";
 
 import { Blog } from "@/data/types";

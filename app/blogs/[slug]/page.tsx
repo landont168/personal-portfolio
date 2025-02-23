@@ -3,6 +3,8 @@ import getPostMetadata from "@/lib/getBlogMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
+import ExternalLink from "@/components/ExternalLink";
+
 // get post content from slug
 function getPostContent(slug: string) {
   const folder = "blogs/";
@@ -29,7 +31,17 @@ export default function BlogPage({ params }: BlogPageProps) {
   return (
     <main>
       <article className="text-inherit prose prose-headings:text-inherit prose-img:rounded-lg prose-img:mt-2 prose-video:rounded-lg prose-video:mt-2 prose-p:my-4 prose-li:p-0">
-        <Markdown>{post.content}</Markdown>
+        <Markdown
+          options={{
+            overrides: {
+              ExternalLink: {
+                component: ExternalLink,
+              },
+            },
+          }}
+        >
+          {post.content}
+        </Markdown>
       </article>
     </main>
   );

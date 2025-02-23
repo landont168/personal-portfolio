@@ -1,5 +1,5 @@
 import Section from "@/components/sections/Section";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../cards/ProjectCard";
 import { projects } from "@/data/content";
 import { Project } from "@/data/types";
 

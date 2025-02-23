@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { ReactNode } from "react";
 
-interface LinkProps {
+interface ExternalLinkProps {
   url: string;
-  children: ReactNode;
+  title: string;
 }
 
-export default function Link({ url, children }: LinkProps) {
+export default function ExternalLink({ url, title }: ExternalLinkProps) {
   return (
     <Button asChild variant="link" className="p-0">
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <div className="text-base">{children}</div>
+        <span className="text-base">{title}</span>
       </a>
     </Button>
   );

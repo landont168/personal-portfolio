@@ -1,5 +1,5 @@
 import Section from "./Section";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "../cards/ExperienceCard";
 import { Experience } from "@/data/types";
 import { experiences } from "../../data/content";
 
