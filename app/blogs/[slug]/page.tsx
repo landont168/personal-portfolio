@@ -17,7 +17,7 @@ function getPostContent(slug: string) {
 }
 
 // create a page for every blog post
-export const genereateStaticParams = async () => {
+export const generateStaticParams = async () => {
   const posts = getPostMetadata("blogs");
   return posts.map((post) => ({ slug: post.slug }));
 };
