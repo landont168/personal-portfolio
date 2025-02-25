@@ -3,7 +3,9 @@ import getPostMetadata from "@/lib/getBlogMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 
+import VerticalImage from "@/components/VerticalImage";
 import ExternalLink from "@/components/ExternalLink";
+import Callout from "@/components/Callout";
 
 // get post content from slug
 function getPostContent(slug: string) {
@@ -21,11 +23,12 @@ export const genereateStaticParams = async () => {
 };
 
 interface BlogPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export default function BlogPage({ params }: BlogPageProps) {
-  const slug = params.slug;
+export default async function BlogPage(props: BlogPageProps) {
+  const params = await props.params;
+  const slug = await params.slug;
   const post = getPostContent(slug);
 
   return (
@@ -36,6 +39,12 @@ export default function BlogPage({ params }: BlogPageProps) {
             overrides: {
               ExternalLink: {
                 component: ExternalLink,
+              },
+              Callout: {
+                component: Callout,
+              },
+              VerticalImage: {
+                component: VerticalImage,
               },
             },
           }}

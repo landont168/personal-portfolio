@@ -7,12 +7,13 @@ import getPostMetadata from "@/lib/getBlogMetadata";
 
 export default function BlogsPage() {
   const blogs = getPostMetadata("blogs");
+  const postedBlogs = blogs.filter((blog) => !blog.draft);
 
   return (
     <Section title="Journal">
       <Separator />
       <div className="flex flex-col">
-        {blogs.map((blog: Blog, index: number) => (
+        {postedBlogs.map((blog: Blog, index: number) => (
           <BlogCard key={index} blog={blog} />
         ))}
       </div>

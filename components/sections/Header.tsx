@@ -8,6 +8,9 @@ export default function Header() {
         <Link href="/">About</Link>
       </Button>
       <Button asChild variant="ghost">
+        <Link href="/projects">Projects</Link>
+      </Button>
+      <Button asChild variant="ghost">
         <Link href="/blogs">Journal</Link>
       </Button>
     </nav>

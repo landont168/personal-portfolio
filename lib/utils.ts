@@ -11,5 +11,5 @@ export function formatDate(date: string) {
     day: "numeric",
     year: "numeric",
   };
-  return new Date(date).toLocaleDateString("en-US", options);
+  return new Date(`${date}T12:00:00`).toLocaleDateString("en-US", options);
 }

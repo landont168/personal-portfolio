@@ -16,5 +16,6 @@ export interface Experience {
 export interface Blog {
   title: string;
   date: string;
+  draft: boolean;
   slug: string;
 }
