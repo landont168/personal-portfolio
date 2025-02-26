@@ -7,7 +7,7 @@ import { ModeToggle } from "../theme/ModeToggle";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between p-4">
+    <footer className="flex items-center justify-between py-4">
       <div className="font-semibold">Landon Trinh</div>
       <div className="flex items-center gap-x-1">
         <Hover url="https://github.com/landont168">

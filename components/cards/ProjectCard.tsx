@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <CardDescription>{project.description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="relative w-full h-64">
+          <div className="relative w-full aspect-[16/9]">
             <Image
               src={project.imageUrl}
               alt={project.title}
@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               fill
               sizes="100%"
               priority
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
           </div>
         </CardContent>

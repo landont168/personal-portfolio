@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
-          <div className="flex flex-col min-h-screen max-w-xl mx-auto">
+          <div className="flex flex-col min-h-screen max-w-2xl mx-auto px-8">
             <Header />
             <Container>{children}</Container>
             <Separator className="mt-10" />
