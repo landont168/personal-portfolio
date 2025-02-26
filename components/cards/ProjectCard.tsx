@@ -21,15 +21,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <CardDescription>{project.description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="relative w-full aspect-[16/9]">
+          <div className="relative w-full object-cover aspect-[16/9] rounded-lg">
             <Image
               src={project.imageUrl}
               alt={project.title}
-              className="rounded transition-transform duration-300 ease-in-out group-hover:scale-105"
+              className="rounded-lg transition-transform duration-300 ease-in-out group-hover:scale-105"
               fill
               sizes="100%"
               priority
-              style={{ objectFit: "contain" }}
             />
           </div>
         </CardContent>

@@ -49,7 +49,7 @@ Since it's better late than never, here are a few of my personal highlights from
   <source src="/introduction/lego-f1-build.mp4" type="video/mp4">
 </video>
 
-Anyways, I plan to continue refining this website as I find new ways to improve it (if you're curious, I built this website with TypeScript, Next.js, Tailwind CSS, and Shadcn). As a fun addition, I’m also thinking of adding a footnote to each journal post with my favourite song at the time of writing — acting as a time capsule.
+Anyways, I plan to continue refining this website as I find new ways to improve it (if you're curious, I built this website using TypeScript, Next.js, Tailwind CSS, and Shadcn). As a fun addition, I’m also thinking of adding a footnote to each journal post with my favourite song at the time of writing — acting as a time capsule.
 
 I’d also love to connect with new people, so if you’re still reading, feel free to reach out! 🙂
 

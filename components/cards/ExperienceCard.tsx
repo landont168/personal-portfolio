@@ -23,7 +23,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           height={46}
         />
         <div className="flex flex-col">
-          <div className="flex items-center gap-x-1">
+          <div className="flex items-center gap-x-2">
             <p className="text-md font-bold">{experience.company}</p>
             {experience.current && <Badge variant="secondary">Current</Badge>}
           </div>
